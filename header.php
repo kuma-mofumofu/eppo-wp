@@ -24,7 +24,10 @@
 		<!-- Cache Busting(キャッシュバスティング -->
 		<link rel='stylesheet' href='<?php bloginfo('stylesheet_url');?>?ver=<?php echo date("His") ?>'/>
 
-		<link rel="stylesheet" href="<?php echo get_theme_file_uri('/css/reset.css'); ?>" />
+		<!-- reset.css destyle -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"/>
+
+    <link rel="stylesheet" href="<?php echo get_theme_file_uri('/css/reset.css'); ?>" />
     <link rel="stylesheet" href="<?php echo get_theme_file_uri('/css/style.css?'); ?>" />
     <title><?php echo esc_html( wp_get_document_title() ); ?></title>
 

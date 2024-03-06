@@ -1,0 +1,28 @@
+@import "function";
+/* ===============================================
+# 変数（variables = 変数）
+=============================================== */
+///* フォント ///
+$font-basic: "Noto Serif JP", serif;
+
+///* フォントサイズ ///
+$fs-normal: rem(16); //基本
+$fs-medium: rem(24); //中見出し
+$fs-large: rem(28); //ページタイトル
+
+//-------------------------------------------
+// rootが16pxの場合（htmlはfont-size:100%;）
+//-------------------------------------------
+// font-size: .75rem;  /* 12px */
+// font-size .8125rem; /* 13px */
+// font-size .875rem;  /* 14px */
+// font-size 1rem;     /* 16px */
+// font-size 1.25rem;  /* 20px */
+// font-size 1.75rem;  /* 28px */
+
+///* 色 ///
+$white:#ffffff;
+$black:#3b4043;
+$gray:#707070;
+$orange:#ff803c;// メニューの色
+$green:#7fd352;// 見出しの色
