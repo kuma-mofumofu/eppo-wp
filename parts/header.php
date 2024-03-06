@@ -7,13 +7,13 @@
       </a>
     </h1>
 
-    <div class="menu_sp">
-      <div class="menu_sp--inner">
+    <div class="menu">
+      <div class="menu--inner">
         <span></span>
         <span></span>
         <span></span>
-      </div><!-- /.menu_sp--inner -->
-    </div><!-- /.menu_sp -->
+      </div><!-- /.menu--inner -->
+    </div><!-- /.menu -->
 
 	</div><!-- /.header--inner -->
 </header>
