@@ -174,6 +174,36 @@ img {
 /* ===============================================
 # header
 =============================================== */
+#header {
+  width: 100%;
+  height: 135px;
+}
+#header .header--inner {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header .header--inner .logo {
+  min-width: 400px;
+  width: 30%;
+}
+#header .header--inner .logo a {
+  display: flex;
+  align-items: center;
+}
+#header .header--inner .logo a div {
+  max-width: 56px;
+  max-height: 56px;
+}
+#header .header--inner .logo a p {
+  font-size: 1.625rem;
+  line-height: 1.2;
+  font-family: "fot-tsukubrdgothic-std", sans-serif;
+  color: #7fd352;
+  font-weight: bold;
+}
+
 /* ===============================================
 # 関数（function = 関数）
 =============================================== */
@@ -198,6 +228,19 @@ img {
 /* ===============================================
 # footer
 =============================================== */
+#footer {
+  width: 100%;
+  height: 300px;
+  background-image: url("/images/footer_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#footer .footer--inner {
+  width: 100%;
+  background-color: rgba(127, 211, 82, 0.7);
+}
+
 /* ===============================================
 # 関数（function = 関数）
 =============================================== */
@@ -222,101 +265,110 @@ img {
 /* ===============================================
 # ハンバーガーメニュー
 =============================================== */
-.menu-sp {
-  position: fixed;
-  top: 2%;
-  right: 2%;
-  display: none;
+.menu {
+  width: 135px;
+  height: 135px;
+  padding: 35px;
+  border-radius: 0 0 0 30px;
+  background-color: #ff803c;
 }
-@media screen and (max-width: 1100px) {
-  .menu-sp {
-    display: inline-block;
-  }
+.menu.is-open {
+  background-color: rgba(255, 255, 255, 0);
 }
-@media screen and (max-width: 550px) {
-  .menu-sp {
-    top: 1%;
-  }
-}
-.menu-sp.is-open span:nth-of-type(1) {
+.menu.is-open span:nth-of-type(1) {
   transform: translateY(6px) rotate(-45deg);
   top: 35%;
 }
-.menu-sp.is-open span:nth-of-type(2) {
+.menu.is-open span:nth-of-type(2) {
   opacity: 0;
 }
-.menu-sp.is-open span:nth-of-type(3) {
+.menu.is-open span:nth-of-type(3) {
   transform: translateY(-6px) rotate(45deg);
   top: 62%;
 }
 
-.menu-btn {
+.menu--inner {
   width: 50px;
   height: 50px;
+  margin: 0 auto;
   position: relative;
 }
-.menu-btn span {
-  width: 50%;
-  height: 2px;
+.menu--inner span {
+  width: 100%;
+  height: 3px;
   display: inline-block;
-  background: #3b4043;
+  background: #ffffff;
   position: absolute;
-  left: 24%;
   transition: all 0.4s;
   border-radius: 5px;
 }
-.menu-btn span:nth-of-type(1) {
-  top: 30%;
+.menu--inner span:nth-of-type(1) {
+  top: 20%;
 }
-.menu-btn span:nth-of-type(2) {
+.menu--inner span:nth-of-type(2) {
   top: 50%;
 }
-.menu-btn span:nth-of-type(3) {
-  top: 70%;
+.menu--inner span:nth-of-type(3) {
+  top: 80%;
 }
 
-#header.is-open {
+#header.is-active {
   height: 100%;
+  background-image: url(../images/footer_bg.png);
+  background-color: #ff803c;
 }
-#header.is-open .menu-sp {
-  display: inline-block;
-}
-#header.is-open .header--inner {
-  width: 70%;
-  margin: 0 auto;
-  flex-direction: column;
+#header.is-active .header--inner {
+  height: 80%;
+  flex-direction: column-reverse;
   align-items: flex-start;
 }
-#header.is-open .logo {
-  margin-left: -100px;
-  margin-bottom: 80px;
+#header.is-active .logo {
+  margin-left: 50px;
 }
-#header.is-open .global--nav {
-  display: block;
-  width: 100%;
+#header.is-active .logo a p {
+  color: #ffffff;
 }
-#header.is-open .global--nav ul {
-  flex-direction: column;
-  width: 100%;
+#header.is-active .menu {
+  margin-left: auto;
 }
-#header.is-open .global--nav ul li {
-  width: 100%;
-  border-bottom: solid 1px #3b4043;
+#header.is-active .menu .menu--inner span {
+  background: #7fd352;
 }
-#header.is-open .global--nav ul a {
-  width: 100%;
-  padding: 20px;
-}
-#header.is-open .hide {
+#header.is-active .hide {
   display: block;
   width: 100%;
   text-align: right;
 }
-#header.is-open .hide a {
+#header.is-active .hide a {
   display: inline-block;
   padding: 20px 0;
 }
 
 #main.is-active, #footer.is-active {
   display: none;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/* ===============================================
+# 関数（function = 関数）
+=============================================== */
+/* ===============================================
+# 関数（function = 関数）
+=============================================== */
+/* ===============================================
+# 変数（variables = 変数）
+=============================================== */
+/* ===============================================
+# 関数（function = 関数）
+=============================================== */
+/* ===============================================
+# 関数（function = 関数）
+=============================================== */
+/* ===============================================
+# 変数（variables = 変数）
+=============================================== */
+/* ===============================================
+# mixin（プロパティや値をセットにしてまとめる）
+=============================================== */
+/* ===============================================
+# メニュー
+=============================================== *//*# sourceMappingURL=style.css.map */

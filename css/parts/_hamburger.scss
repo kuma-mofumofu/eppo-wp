@@ -5,19 +5,16 @@
 /* ===============================================
 # ハンバーガーメニュー
 =============================================== */
-.menu-sp{
-  position: fixed;
-  top: 2%;
-  right: 2%;
-  display: none;
-  @include pc-m{
-    display: inline-block;
-  }
-  @include sp{
-    top: 1%;
-  }
+.menu{
+  width: 135px;
+  height: 135px;
+  padding: 35px;
+  border-radius: 0 0 0 30px;
+  background-color:$orange;
 
   &.is-open{
+    background-color:rgba(255,255,255,0);
+
     span{
       &:nth-of-type(1){
         transform: translateY(6px) rotate(-45deg);
@@ -34,69 +31,61 @@
   }
 }
 
-.menu-btn{
+.menu--inner{
   width: 50px;
   height: 50px;
+  margin: 0 auto;
   position: relative;
 
   span{
-    width: 50%;
-    height: 2px;
+    width: 100%;
+    height: 3px;
     display: inline-block;
-    background: $black;
+    background: $white;
     position: absolute;
-    left: 24%;
     transition: all 0.4s;
     border-radius: 5px;
 
     &:nth-of-type(1){
-      top:30%;
+      top:20%;
     }
     &:nth-of-type(2){
       top:50%;
     }
     &:nth-of-type(3){
-      top:70%;
+      top:80%;
     }
   }
 }
 
 #header{
-  &.is-open{
+  &.is-active{
     height: 100%;
-    
-    .menu-sp{
-      display: inline-block;
-    }
+    background-image: url(../images/footer_bg.png);
+    background-color:$orange;
 
     .header--inner{
-      width: 70%;
-      margin: 0 auto;
-      flex-direction: column;
+      height: 80%;
+      flex-direction: column-reverse;
       align-items: flex-start;
     }
 
     .logo{
-      margin-left: -100px;
-      margin-bottom: 80px;
+      margin-left: 50px;
+
+      a{
+        p{
+          color:$white;
+        }
+      }
     }
 
-    .global--nav{
-      display: block;
-      width: 100%;
+    .menu{
+      margin-left: auto;
 
-      ul{
-        flex-direction:column;
-        width: 100%;
-
-        li{
-          width: 100%;
-          border-bottom: solid 1px $black;
-        }
-
-        a{
-          width: 100%;
-          padding: 20px;
+      .menu--inner{
+        span{
+          background:$green;
         }
       }
     }
