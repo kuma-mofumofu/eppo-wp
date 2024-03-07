@@ -63,6 +63,7 @@
     height: 100%;
     background-image: url(../images/footer_bg.png);
     background-color:$orange;
+    position: relative;
 
     .header--inner{
       height: 80%;
@@ -71,7 +72,7 @@
     }
 
     .logo{
-      margin-left: 50px;
+      margin-left: 100px;
 
       a{
         p{
@@ -91,14 +92,11 @@
     }
 
     .hide{
-      display: block;
-      width: 100%;
-      text-align: right;
-      
-      a{
-        display: inline-block;
-        padding: 20px 0;
-      }
+      opacity: 1;
+      height: auto;
+      position: absolute;
+      top: 100px;
+      left: 100px;
     }
   }
 }

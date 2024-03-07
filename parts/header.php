@@ -18,38 +18,38 @@
       </div><!-- /.menu--inner -->
     </div><!-- /.menu -->
 
-    <div class="hide">
-      <section class="hide--about">
-        <h2>ABOUT</h2>
-        <a href="#">えっぽについて</a>
-        <a href="#">活動報告</a>
-        <a href="#">たからばこ</a>
-      </section>
+  </div><!-- /.header--inner -->
 
-      <section class="hide--contact">
-        <h2>CONTACT</h2>
-        <a href="#">お問合せ</a>
-        <a href="#" class="line">LINE公式アカウント</a>
-      </section>
+  <div class="hide">
+    <section class="hide--about">
+      <h2>ABOUT</h2>
+      <a href="#">えっぽについて</a>
+      <a href="#">活動報告</a>
+      <a href="#">たからばこ</a>
+    </section>
 
-      <section class="hide--news">
-        <h2>NEWS</h2>
-        <a href="#">お知らせ</a>
-      </section>
+    <section class="hide--contact">
+      <h2>CONTACT</h2>
+      <a href="#">お問合せ</a>
+      <a href="#" class="line">LINE公式アカウント</a>
+    </section>
 
-      <section class="hide--member">
-        <a href="#">
-          <h2>MEMBER</h2>
-          <p>メンバー＆サポーター募集</p>
-          <p>支援のお願い</p>
-          <div class="arrow">
-            <span></span>
-            <span></span>
-          </div>
-        </a>
-      </section>
+    <section class="hide--news">
+      <h2>NEWS</h2>
+      <a href="#">お知らせ</a>
+    </section>
 
-    </div><!-- /.hide -->
+    <section class="hide--member">
+      <a class="hide--member--inner" href="#">
+        <h2>MEMBER</h2>
+        <p>メンバー＆サポーター募集</p>
+        <p>支援のお願い</p>
+        <div class="arrow">
+          <span></span>
+          <span></span>
+        </div>
+      </a>
+    </section>
 
-	</div><!-- /.header--inner -->
+  </div><!-- /.hide -->
 </header>

@@ -316,6 +316,7 @@ img {
   height: 100%;
   background-image: url(../images/footer_bg.png);
   background-color: #ff803c;
+  position: relative;
 }
 #header.is-active .header--inner {
   height: 80%;
@@ -323,7 +324,7 @@ img {
   align-items: flex-start;
 }
 #header.is-active .logo {
-  margin-left: 50px;
+  margin-left: 100px;
 }
 #header.is-active .logo a p {
   color: #ffffff;
@@ -335,13 +336,11 @@ img {
   background: #7fd352;
 }
 #header.is-active .hide {
-  display: block;
-  width: 100%;
-  text-align: right;
-}
-#header.is-active .hide a {
-  display: inline-block;
-  padding: 20px 0;
+  opacity: 1;
+  height: auto;
+  position: absolute;
+  top: 100px;
+  left: 100px;
 }
 
 #main.is-active, #footer.is-active {
@@ -371,4 +370,99 @@ img {
 =============================================== */
 /* ===============================================
 # メニュー
-=============================================== *//*# sourceMappingURL=style.css.map */
+=============================================== */
+#header .hide {
+  opacity: 0;
+  width: 60%;
+  height: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+#header .hide section {
+  width: 45%;
+}
+#header .hide section h2 {
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+#header .hide section h2, #header .hide section a, #header .hide section p {
+  font-family: "fot-tsukubrdgothic-std", sans-serif;
+  margin-bottom: 1rem;
+}
+#header .hide section a {
+  color: #ffffff;
+  display: inline-block;
+}
+#header .hide section h2,
+#header .hide section .hide--member--inner {
+  color: #0d9200;
+}
+#header .hide .hide--about a,
+#header .hide .hide--contact a {
+  display: block;
+}
+#header .hide .hide--contact .line::after {
+  content: "";
+  background-image: url(../images/icon/line_icon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  margin-left: 5px;
+}
+#header .hide .hide--member {
+  background: #ffffff;
+  padding: 20px 30px;
+  border-radius: 15px;
+}
+#header .hide .hide--member--inner p:nth-of-type(2) {
+  margin: 0;
+}
+
+/* ===============================================
+# 関数（function = 関数）
+=============================================== */
+/* ===============================================
+# 関数（function = 関数）
+=============================================== */
+/* ===============================================
+# 変数（variables = 変数）
+=============================================== */
+/* ===============================================
+# 関数（function = 関数）
+=============================================== */
+/* ===============================================
+# 関数（function = 関数）
+=============================================== */
+/* ===============================================
+# 変数（variables = 変数）
+=============================================== */
+/* ===============================================
+# mixin（プロパティや値をセットにしてまとめる）
+=============================================== */
+/* ===============================================
+# 矢印
+=============================================== */
+#header .hide--member .arrow {
+  position: relative;
+  left: 140px;
+}
+#header .hide--member .arrow span {
+  display: inline-block;
+  height: 2px;
+  background: #7fd352;
+  position: absolute;
+}
+#header .hide--member .arrow span:first-child {
+  width: 1rem;
+  right: 5px;
+  transform: translateX(7px) translateY(-5px) rotate(45deg);
+}
+#header .hide--member .arrow span:last-child {
+  width: 3rem;
+  right: 0;
+}/*# sourceMappingURL=style.css.map */

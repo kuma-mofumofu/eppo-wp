@@ -1,0 +1,34 @@
+@import "../global/function";
+@import "../global/variables";
+@import "../global/mixin";
+/* ===============================================
+# 矢印
+=============================================== */
+// ハンバーガーメニュー内
+#header{
+  .hide--member{
+
+    .arrow{
+      position: relative;
+      left: 140px;
+
+      span{
+        display: inline-block;
+        height: 2px;
+        background:$green;
+        position: absolute;
+
+        &:first-child{
+          width: 1rem;
+          right: 5px;
+          transform: translateX(7px) translateY(-5px) rotate(45deg);
+        }
+
+        &:last-child{
+          width: 3rem;
+          right: 0;
+        }
+      }
+    }
+  }
+}

@@ -4,3 +4,75 @@
 /* ===============================================
 # メニュー
 =============================================== */
+#header{
+  .hide{
+    opacity: 0;
+    width: 60%;
+    height: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    section{
+      width: 45%;
+
+      h2{
+        font-size:$fs-large;
+        font-weight: bold;
+      }
+
+      h2,a,p{
+        font-family:$font-tukusi;
+        margin-bottom: 1rem;
+      }
+
+      a{
+        color:$white;
+        display: inline-block;
+      }
+
+      h2,
+      .hide--member--inner{
+        color:$green-2;
+      }
+    }
+
+    .hide--about,
+    .hide--contact{
+      a{
+        display:block;
+      }
+    }
+
+    .hide--contact{
+      .line{
+        &::after{
+          content:"";
+          background-image:url(../images/icon/line_icon.png);
+          background-repeat: no-repeat;
+          background-position:center;
+          background-size:contain;
+          vertical-align: middle;
+          width: 30px;
+          height: 30px;
+          display: inline-block;
+          margin-left: 5px;
+        }
+      }
+    }
+
+    .hide--member{
+      background:$white;
+      padding: 20px 30px;
+      border-radius: 15px;
+    }
+
+    .hide--member--inner{
+      p{
+        &:nth-of-type(2){
+          margin: 0;
+        }
+      }
+    }
+  }
+}
