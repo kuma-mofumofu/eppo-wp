@@ -59,8 +59,8 @@
 =============================================== */
 * {
   box-sizing: border-box;
-  font-family: "Noto Serif JP", serif;
-  font-style: 1rem;
+  font-family: "fot-tsukubrdgothic-std", sans-serif;
+  font-size: 1rem;
   font-weight: 500;
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -199,7 +199,6 @@ img {
 #header .header--inner .logo a p {
   font-size: 1.625rem;
   line-height: 1.2;
-  font-family: "fot-tsukubrdgothic-std", sans-serif;
   color: #7fd352;
   font-weight: bold;
 }
@@ -228,17 +227,47 @@ img {
 /* ===============================================
 # footer
 =============================================== */
+.wood {
+  max-width: 125px;
+  margin-left: 150px;
+  margin-bottom: -3px;
+}
+
 #footer {
   width: 100%;
   height: 300px;
+  padding: 20px 30px;
   background-image: url("../images/footer_bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-color: #7fd352;
+  filter: brightness(110%);
 }
 #footer .footer--inner {
   width: 100%;
+}
+#footer .footer--inner--top {
+  display: flex;
+}
+#footer .footer--inner--top .footer_logo {
+  display: flex;
+  flex-wrap: wrap;
+}
+#footer .footer--inner--top .footer_logo div {
+  max-width: 28px;
+  max-height: 28px;
+}
+#footer .footer--inner--top .footer_logo p {
+  width: 90%;
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+#footer .footer--inner--top .footer_logo a {
+  display: inline-block;
+  color: #ffffff;
+  margin-left: 1rem;
 }
 
 /* ===============================================
@@ -317,6 +346,7 @@ img {
   background-image: url(../images/footer_bg.png);
   background-color: #ff803c;
   position: relative;
+  filter: brightness(110%);
 }
 #header.is-active .header--inner {
   height: 80%;
@@ -387,7 +417,6 @@ img {
   font-weight: bold;
 }
 #header .hide section h2, #header .hide section a, #header .hide section p {
-  font-family: "fot-tsukubrdgothic-std", sans-serif;
   margin-bottom: 1rem;
 }
 #header .hide section a {

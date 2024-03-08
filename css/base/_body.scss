@@ -2,16 +2,16 @@
 
 *{
   box-sizing: border-box;
-  font-family:$font-basic;
-  font-style: $fs-normal;
+  font-family:$font-tukusi;
+  font-size: $fs-normal;
   font-weight: 500;
-  //// スクロールバー消去 ////
+  // スクロールバー消去
   // IE・Microsoft Edge
   -ms-overflow-style: none;
   // Firefox
   scrollbar-width: none;
 }
-//// Google Chrome・Safari ////
+// Google Chrome・Safari
 *::-webkit-scrollbar{
   display: none;
 }
