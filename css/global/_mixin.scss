@@ -8,6 +8,16 @@
 // 使えないパターン「数字から始まる」「連続ハイフン(--)」「@などの記号」
 
 
+// 背景柄
+@mixin bg-image(){
+  background-image: url("../images/footer_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center;
+  filter: brightness(110%);// 明度
+}
+
+
 // ブレイクポイント
 @mixin pc-xl(){
  @media screen and (max-width:2000px) {

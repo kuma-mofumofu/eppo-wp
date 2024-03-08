@@ -235,39 +235,65 @@ img {
 
 #footer {
   width: 100%;
-  height: 300px;
-  padding: 20px 30px;
+  background-color: #7fd352;
   background-image: url("../images/footer_bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-color: #7fd352;
   filter: brightness(110%);
 }
 #footer .footer--inner {
   width: 100%;
-}
-#footer .footer--inner--top {
   display: flex;
+  justify-content: space-between;
 }
-#footer .footer--inner--top .footer_logo {
+#footer .footer--inner--left {
+  display: flex;
+  flex-direction: column;
+  margin: 25px 0 0 50px;
+}
+#footer .footer--inner--left .footer_logo {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 56px;
 }
-#footer .footer--inner--top .footer_logo div {
+#footer .footer--inner--left .footer_logo div {
   max-width: 28px;
   max-height: 28px;
 }
-#footer .footer--inner--top .footer_logo p {
+#footer .footer--inner--left .footer_logo p {
   width: 90%;
   font-size: 1.125rem;
   font-weight: bold;
   color: #ffffff;
 }
-#footer .footer--inner--top .footer_logo a {
+#footer .footer--inner--left .footer_logo a {
   display: inline-block;
   color: #ffffff;
   margin-left: 1rem;
+}
+#footer .footer--inner--left .footer_nav {
+  margin-bottom: 50px;
+}
+#footer .footer--inner--left .footer_nav ul {
+  width: 260px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+#footer .footer--inner--left .footer_nav ul li {
+  width: 43%;
+}
+#footer .footer--inner--left .footer_nav ul li:nth-of-type(5) {
+  width: 46%;
+}
+#footer .footer--inner--left .footer_nav ul li a {
+  color: #ffffff;
+}
+#footer small {
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 /* ===============================================
@@ -300,9 +326,14 @@ img {
   padding: 35px;
   border-radius: 0 0 0 30px;
   background-color: #ff803c;
+  background-image: url("../images/footer_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(110%);
 }
 .menu.is-open {
-  background-color: rgba(255, 255, 255, 0);
+  filter: brightness(100%);
 }
 .menu.is-open span:nth-of-type(1) {
   transform: translateY(6px) rotate(-45deg);
@@ -343,10 +374,13 @@ img {
 
 #header.is-active {
   height: 100%;
-  background-image: url(../images/footer_bg.png);
+  background-image: url("../images/footer_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(110%);
   background-color: #ff803c;
   position: relative;
-  filter: brightness(110%);
 }
 #header.is-active .header--inner {
   height: 80%;
@@ -363,7 +397,7 @@ img {
   margin-left: auto;
 }
 #header.is-active .menu .menu--inner span {
-  background: #7fd352;
+  background-color: #7fd352;
 }
 #header.is-active .hide {
   opacity: 1;
@@ -444,6 +478,7 @@ img {
   margin-left: 5px;
 }
 #header .hide .hide--member {
+  width: 390px;
   background: #ffffff;
   padding: 20px 30px;
   border-radius: 15px;
@@ -494,4 +529,53 @@ img {
 #header .hide--member .arrow span:last-child {
   width: 3rem;
   right: 0;
+}
+
+/* ===============================================
+# 関数（function = 関数）
+=============================================== */
+/* ===============================================
+# 関数（function = 関数）
+=============================================== */
+/* ===============================================
+# 変数（variables = 変数）
+=============================================== */
+/* ===============================================
+# 関数（function = 関数）
+=============================================== */
+/* ===============================================
+# 関数（function = 関数）
+=============================================== */
+/* ===============================================
+# 変数（variables = 変数）
+=============================================== */
+/* ===============================================
+# mixin（プロパティや値をセットにしてまとめる）
+=============================================== */
+/* ===============================================
+# ボタン
+=============================================== */
+#footer .footer_btn a {
+  display: flex;
+}
+#footer .footer_btn .btn {
+  width: 280px;
+  height: 98px;
+  border-radius: 0 0 15px 15px;
+  text-align: center;
+  background-image: url("../images/footer_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#footer .footer_btn .btn p {
+  font-size: 1.25rem;
+  color: #ffffff;
+  line-height: 98px;
+}
+#footer .footer_btn .btn-orange {
+  background-color: #ff803c;
+}
+#footer .footer_btn .btn-red {
+  background-color: #e73245;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,38 @@
+@import "../global/function";
+@import "../global/variables";
+@import "../global/mixin";
+/* ===============================================
+# ボタン
+=============================================== */
+#footer{
+  .footer_btn{
+
+    a{
+      display: flex;
+    }
+
+    .btn{
+      width: 280px;
+      height: 98px;
+      border-radius: 0 0 15px 15px;
+      text-align: center;
+      background-image: url("../images/footer_bg.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position:center;
+
+      p{
+        font-size:rem(20);
+        color:$white;
+        line-height: 98px;
+      }
+    }
+
+    .btn-orange{
+      background-color:$orange;
+    }
+    .btn-red{
+      background-color:$red;
+    }
+  }
+}

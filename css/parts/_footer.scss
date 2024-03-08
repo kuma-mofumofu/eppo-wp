@@ -12,25 +12,24 @@
 
 #footer{
   width: 100%;
-  height: 300px;
-  padding: 20px 30px;
-  background-image: url("../images/footer_bg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position:center;
   background-color:$green;
-  filter: brightness(110%);
+  @include bg-image;
 
   .footer--inner{
     width: 100%;
+    display: flex;
+    justify-content: space-between;
   }
 
-  .footer--inner--top{
+  .footer--inner--left{
     display: flex;
+    flex-direction: column;
+    margin: 25px 0 0 50px;
 
     .footer_logo{
       display: flex;
       flex-wrap: wrap;
+      margin-bottom: 56px;
 
       div{
         max-width: 28px;
@@ -50,5 +49,33 @@
         margin-left:1rem;
       }
     }
+
+    .footer_nav{
+      margin-bottom: 50px;
+
+      ul{
+        width: 260px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+
+        li{
+          width: 43%;
+          &:nth-of-type(5){
+            width: 46%;
+          }
+
+          a{
+            color:$white;
+          }
+        }
+      }
+    }
+  }
+
+  small{
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
   }
 }
