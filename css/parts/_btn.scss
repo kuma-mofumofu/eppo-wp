@@ -36,3 +36,39 @@
     }
   }
 }
+
+// footerの上
+.contact{
+  .border{
+    border: solid 6px $green;
+    background-color: rgba(255,255,255,0);
+    width: 376px;
+    height: 180px;
+    position: absolute;
+    top: 0;
+    left: -10px;
+  }
+  .border,
+  .contact_btn{
+    border-radius: 40px 0;
+  }
+  .contact_btn{
+    width: 376px;
+    height: 187px;
+    background-color:$white;
+    display: flex;
+    align-items: center;
+    box-shadow: 7px 7px 7px 0px rgba(145, 145, 145, 0.38);
+    position: relative;
+
+    p{
+      width: 75%;
+      line-height: 1.2;
+      color:$green;
+      font-weight: bold;
+      font-size:rem(26);
+      text-align: center;
+    }
+  }
+}
+

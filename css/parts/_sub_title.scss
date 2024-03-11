@@ -1,0 +1,12 @@
+@import "../global/function";
+@import "../global/variables";
+@import "../global/mixin";
+/* ===============================================
+# 中見出し
+=============================================== */
+// footerの上
+.contact{
+  .sub_title{
+    color: $pink;
+  }
+}

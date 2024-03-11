@@ -17,7 +17,7 @@
       width: 45%;
 
       h2{
-        font-size:$fs-large;
+        font-size:$fs-small;
         font-weight: bold;
       }
 
@@ -63,11 +63,14 @@
     .hide--member{
       width: 390px;
       background:$white;
-      padding: 20px 30px;
       border-radius: 15px;
     }
 
     .hide--member--inner{
+      width: 100%;
+      padding: 20px 30px;
+      margin: 0;
+
       p{
         &:nth-of-type(2){
           margin: 0;

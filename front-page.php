@@ -7,4 +7,5 @@
 
   </main>
 </div><!-- /#front -->
+<?php  get_template_part('parts/contact'); ?>
 <?php get_footer(); ?>

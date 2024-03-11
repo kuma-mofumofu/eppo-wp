@@ -177,6 +177,8 @@ img {
 #header {
   width: 100%;
   height: 135px;
+  background-color: rgba(255, 255, 255, 0);
+  margin-bottom: -135px;
 }
 #header .header--inner {
   width: 100%;
@@ -201,99 +203,6 @@ img {
   line-height: 1.2;
   color: #7fd352;
   font-weight: bold;
-}
-
-/* ===============================================
-# 関数（function = 関数）
-=============================================== */
-/* ===============================================
-# 関数（function = 関数）
-=============================================== */
-/* ===============================================
-# 変数（variables = 変数）
-=============================================== */
-/* ===============================================
-# 関数（function = 関数）
-=============================================== */
-/* ===============================================
-# 関数（function = 関数）
-=============================================== */
-/* ===============================================
-# 変数（variables = 変数）
-=============================================== */
-/* ===============================================
-# mixin（プロパティや値をセットにしてまとめる）
-=============================================== */
-/* ===============================================
-# footer
-=============================================== */
-.wood {
-  max-width: 125px;
-  margin-left: 150px;
-  margin-bottom: -3px;
-}
-
-#footer {
-  width: 100%;
-  background-color: #7fd352;
-  background-image: url("../images/footer_bg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  filter: brightness(110%);
-}
-#footer .footer--inner {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-#footer .footer--inner--left {
-  display: flex;
-  flex-direction: column;
-  margin: 25px 0 0 50px;
-}
-#footer .footer--inner--left .footer_logo {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 56px;
-}
-#footer .footer--inner--left .footer_logo div {
-  max-width: 28px;
-  max-height: 28px;
-}
-#footer .footer--inner--left .footer_logo p {
-  width: 90%;
-  font-size: 1.125rem;
-  font-weight: bold;
-  color: #ffffff;
-}
-#footer .footer--inner--left .footer_logo a {
-  display: inline-block;
-  color: #ffffff;
-  margin-left: 1rem;
-}
-#footer .footer--inner--left .footer_nav {
-  margin-bottom: 50px;
-}
-#footer .footer--inner--left .footer_nav ul {
-  width: 260px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-#footer .footer--inner--left .footer_nav ul li {
-  width: 43%;
-}
-#footer .footer--inner--left .footer_nav ul li:nth-of-type(5) {
-  width: 46%;
-}
-#footer .footer--inner--left .footer_nav ul li a {
-  color: #ffffff;
-}
-#footer small {
-  display: block;
-  text-align: center;
-  margin-bottom: 10px;
 }
 
 /* ===============================================
@@ -480,8 +389,12 @@ img {
 #header .hide .hide--member {
   width: 390px;
   background: #ffffff;
-  padding: 20px 30px;
   border-radius: 15px;
+}
+#header .hide .hide--member--inner {
+  width: 100%;
+  padding: 20px 30px;
+  margin: 0;
 }
 #header .hide .hide--member--inner p:nth-of-type(2) {
   margin: 0;
@@ -513,7 +426,6 @@ img {
 =============================================== */
 #header .hide--member .arrow {
   position: relative;
-  left: 140px;
 }
 #header .hide--member .arrow span {
   display: inline-block;
@@ -529,6 +441,213 @@ img {
 #header .hide--member .arrow span:last-child {
   width: 3rem;
   right: 0;
+}
+
+.contact_arrow {
+  width: 35px;
+  height: 35px;
+  border-radius: 50% 50%;
+  background-color: #7fd352;
+  position: relative;
+}
+.contact_arrow span {
+  height: 3px;
+  background-color: #ffffff;
+  display: inline-block;
+  position: absolute;
+}
+.contact_arrow span:nth-of-type(1), .contact_arrow span :nth-of-type(3) {
+  width: 15px;
+  top: 30%;
+  left: 40%;
+  transform: rotate(45deg);
+}
+.contact_arrow span:nth-of-type(2) {
+  width: 20px;
+  top: 47%;
+  left: 23%;
+}
+.contact_arrow span:nth-of-type(3) {
+  width: 15px;
+  top: 61%;
+  left: 40%;
+  transform: rotate(-45deg);
+}
+
+.contact--outer {
+  width: 100%;
+  background-color: #ffffe5;
+  padding: 300px 0 100px 0;
+  margin-bottom: -176px;
+}
+.contact--outer .contact {
+  width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact--outer .contact .contact--inner {
+  width: 100%;
+  display: flex;
+  gap: 40px;
+  margin-bottom: 100px;
+}
+.contact--outer .contact h3 {
+  font-size: 2.3125rem;
+  font-weight: bold;
+  font-family: "router", sans-serif;
+}
+.contact--outer .contact .contact--tel {
+  width: 100%;
+  background-color: #7fd352;
+  padding: 30px 40px;
+  border-radius: 20px;
+  position: relative;
+  z-index: 2;
+}
+.contact--outer .contact .contact--tel h4 {
+  text-align: center;
+}
+.contact--outer .contact .contact--tel h4,
+.contact--outer .contact .contact--tel .tel {
+  color: #ffffff;
+  font-weight: bold;
+}
+.contact--outer .contact .contact--tel h4 {
+  font-size: 1.875rem;
+  margin-bottom: 1rem;
+}
+.contact--outer .contact .contact--tel .contact--tel--inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact--outer .contact .contact--tel .contact--tel--inner a::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+.contact--outer .contact .contact--tel .contact--tel--inner .tel {
+  font-size: 1.75rem;
+  display: flex;
+  align-items: center;
+}
+.contact--outer .contact .contact--tel .contact--tel--inner .tel::before {
+  background-image: url(../images/icon/tel-icon.png);
+}
+.contact--outer .contact .contact--tel .contact--tel--inner .tel span {
+  font-size: 1rem;
+}
+.contact--outer .contact .contact--tel .contact--tel--inner .mail {
+  color: #f39abb;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 5px 15px 0 30px;
+  box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.2);
+}
+.contact--outer .contact .contact--tel .contact--tel--inner .mail::before {
+  background-image: url(../images/icon/mail-icon.png);
+  margin: 5px 8px 0 0;
+}
+
+/* ===============================================
+# 関数（function = 関数）
+=============================================== */
+/* ===============================================
+# 関数（function = 関数）
+=============================================== */
+/* ===============================================
+# 変数（variables = 変数）
+=============================================== */
+/* ===============================================
+# 関数（function = 関数）
+=============================================== */
+/* ===============================================
+# 関数（function = 関数）
+=============================================== */
+/* ===============================================
+# 変数（variables = 変数）
+=============================================== */
+/* ===============================================
+# mixin（プロパティや値をセットにしてまとめる）
+=============================================== */
+/* ===============================================
+# footer
+=============================================== */
+.wood {
+  max-width: 125px;
+  margin-left: 150px;
+  margin-bottom: -3px;
+  position: relative;
+  z-index: 1;
+}
+
+#footer {
+  width: 100%;
+  background-color: #7fd352;
+  background-image: url("../images/footer_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(110%);
+}
+#footer .footer--inner {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#footer .footer--inner--left {
+  display: flex;
+  flex-direction: column;
+  margin: 25px 0 0 50px;
+}
+#footer .footer--inner--left .footer_logo {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 56px;
+}
+#footer .footer--inner--left .footer_logo div {
+  max-width: 28px;
+  max-height: 28px;
+}
+#footer .footer--inner--left .footer_logo p {
+  width: 90%;
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+#footer .footer--inner--left .footer_logo a {
+  display: inline-block;
+  color: #ffffff;
+  margin-left: 1rem;
+}
+#footer .footer--inner--left .footer_nav {
+  margin-bottom: 50px;
+}
+#footer .footer--inner--left .footer_nav ul {
+  width: 260px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+#footer .footer--inner--left .footer_nav ul li {
+  width: 43%;
+}
+#footer .footer--inner--left .footer_nav ul li:nth-of-type(5) {
+  width: 46%;
+}
+#footer .footer--inner--left .footer_nav ul li a {
+  color: #ffffff;
+}
+#footer small {
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 /* ===============================================
@@ -578,4 +697,63 @@ img {
 }
 #footer .footer_btn .btn-red {
   background-color: #e73245;
+}
+
+.contact .border {
+  border: solid 6px #7fd352;
+  background-color: rgba(255, 255, 255, 0);
+  width: 376px;
+  height: 180px;
+  position: absolute;
+  top: 0;
+  left: -10px;
+}
+.contact .border,
+.contact .contact_btn {
+  border-radius: 40px 0;
+}
+.contact .contact_btn {
+  width: 376px;
+  height: 187px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  box-shadow: 7px 7px 7px 0px rgba(145, 145, 145, 0.38);
+  position: relative;
+}
+.contact .contact_btn p {
+  width: 75%;
+  line-height: 1.2;
+  color: #7fd352;
+  font-weight: bold;
+  font-size: 1.625rem;
+  text-align: center;
+}
+
+/* ===============================================
+# 関数（function = 関数）
+=============================================== */
+/* ===============================================
+# 関数（function = 関数）
+=============================================== */
+/* ===============================================
+# 変数（variables = 変数）
+=============================================== */
+/* ===============================================
+# 関数（function = 関数）
+=============================================== */
+/* ===============================================
+# 関数（function = 関数）
+=============================================== */
+/* ===============================================
+# 変数（variables = 変数）
+=============================================== */
+/* ===============================================
+# mixin（プロパティや値をセットにしてまとめる）
+=============================================== */
+/* ===============================================
+# 中見出し
+=============================================== */
+.contact .sub_title {
+  color: #f39abb;
 }/*# sourceMappingURL=style.css.map */

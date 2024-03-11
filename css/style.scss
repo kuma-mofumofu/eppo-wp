@@ -18,8 +18,10 @@
 # パーツ
 =============================================== */
 @import "parts/header";
-@import "parts/footer";
 @import "parts/hamburger";    // ハンバーガーメニュー
 @import "parts/menu";         // ハンバーガーで開いた部分
 @import "parts/arrow";        // 矢印
+@import "parts/contact";      // footerの上
+@import "parts/footer";
 @import "parts/btn";          // ボタン
+@import "parts/sub_title";    // 中見出し

@@ -5,11 +5,12 @@
 ///* フォント ///
 $font-basic: "Noto Serif JP", serif;
 $font-tukusi:"fot-tsukubrdgothic-std", sans-serif;// weight400 700
+$font-router:"router", sans-serif;
 
 ///* フォントサイズ ///
 $fs-normal: rem(16); //基本
-$fs-medium: rem(24); //中見出し
-$fs-large: rem(28); //ページタイトル
+$fs-small: rem(28); //小見出し
+$fs-medium: rem(37); //中見出し
 
 //-------------------------------------------
 // rootが16pxの場合（htmlはfont-size:100%;）
@@ -29,3 +30,5 @@ $red:#e73245;
 $orange:#ff803c;// メニューの色
 $green-2:#0d9200;// 濃い緑
 $green:#7fd352;// 見出しの色
+$bg-color:#ffffe5;
+$pink:#f39abb;
