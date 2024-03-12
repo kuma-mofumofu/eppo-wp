@@ -148,6 +148,88 @@ img {
 # mixin（プロパティや値をセットにしてまとめる）
 =============================================== */
 /* ===============================================
+# 関数（function = 関数）
+=============================================== */
+/* ===============================================
+# 関数（function = 関数）
+=============================================== */
+/* ===============================================
+# 変数（variables = 変数）
+=============================================== */
+/* ===============================================
+# 関数（function = 関数）
+=============================================== */
+/* ===============================================
+# 関数（function = 関数）
+=============================================== */
+/* ===============================================
+# 変数（variables = 変数）
+=============================================== */
+/* ===============================================
+# mixin（プロパティや値をセットにしてまとめる）
+=============================================== */
+/* ===============================================
+# お知らせ一覧
+=============================================== */
+#news {
+  background-color: #ffffe5;
+  padding-bottom: 50px;
+}
+#news .news--inner {
+  max-width: 1522px;
+  margin: 0 auto 100px auto;
+  padding: 166px 131px;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+#news .news--inner .list--item {
+  padding: 2rem 0;
+  border-bottom: solid 2px rgba(203, 203, 203, 0.3215686275);
+}
+#news .news--inner .list--item a {
+  display: flex;
+}
+#news .news--inner .list--item .image_block {
+  max-width: 150px;
+  max-height: 150px;
+  width: 15%;
+  border-radius: 15px;
+  margin-right: 15px;
+}
+#news .news--inner .list--item .image_block img {
+  border-radius: 20px;
+}
+#news .news--inner .list--item .text_block {
+  padding: 12px 0;
+}
+#news .news--inner .list--item .text_block .time--outer {
+  margin-bottom: 0.5rem;
+}
+#news .news--inner .list--item .text_block .time--outer .icon {
+  color: #ffffff;
+  background-color: #7fd352;
+  border-radius: 10px;
+  padding: 2px 10px;
+}
+#news .news--inner .list--item .text_block .time--outer .time {
+  color: #7fd352;
+}
+#news .news--inner .list--item .text_block .news_title {
+  font-size: 1.375rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+#news .news--inner .list--item .text_block .text {
+  margin-bottom: 1rem;
+}
+#news .news--inner .list--item .text_block .time,
+#news .news--inner .list--item .text_block .news_title,
+#news .news--inner .list--item .text_block .text,
+#news .news--inner .list--item .text_block span {
+  color: #7fd352;
+}
+
+/* ===============================================
 # パーツ
 =============================================== */
 /* ===============================================
@@ -752,8 +834,79 @@ img {
 # mixin（プロパティや値をセットにしてまとめる）
 =============================================== */
 /* ===============================================
+# ページタイトル
+=============================================== */
+.title {
+  margin: 200px 0 100px 0;
+}
+.title h2 {
+  text-align: center;
+  color: #7fd352;
+  font-size: 3.75rem;
+  font-weight: bold;
+}
+
+/* ===============================================
+# 関数（function = 関数）
+=============================================== */
+/* ===============================================
+# 関数（function = 関数）
+=============================================== */
+/* ===============================================
+# 変数（variables = 変数）
+=============================================== */
+/* ===============================================
+# 関数（function = 関数）
+=============================================== */
+/* ===============================================
+# 関数（function = 関数）
+=============================================== */
+/* ===============================================
+# 変数（variables = 変数）
+=============================================== */
+/* ===============================================
+# mixin（プロパティや値をセットにしてまとめる）
+=============================================== */
+/* ===============================================
 # 中見出し
 =============================================== */
 .contact .sub_title {
   color: #f39abb;
+}
+
+/* ===============================================
+# 関数（function = 関数）
+=============================================== */
+/* ===============================================
+# 変数（variables = 変数）
+=============================================== */
+/* ===============================================
+# ページャー
+=============================================== */
+.wp-pagenavi {
+  max-width: 1522px;
+  text-align: center;
+  background-color: #ffffe5;
+  margin: 0 auto;
+}
+.wp-pagenavi a, .wp-pagenavi span {
+  color: #7fd352;
+  background-color: #ffffff;
+  padding: 8px 15px;
+  margin: 0 2px;
+  white-space: nowrap;
+  border-radius: 3px;
+  transition: 0.2s ease-in-out;
+  text-align: center;
+  text-decoration: none;
+}
+.wp-pagenavi .current {
+  color: #7fd352;
+  background-color: #ffffff;
+  font-weight: bold;
+  border: solid 1px #000;
+}
+.wp-pagenavi a:hover {
+  color: #ffffff;
+  background-color: #7fd352;
 }/*# sourceMappingURL=style.css.map */

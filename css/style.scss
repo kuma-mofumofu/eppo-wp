@@ -13,6 +13,7 @@
 # ページ
 =============================================== */
 @import "pages/front";        // フロントページ
+@import "pages/category-news";// お知らせ一覧
 
 /* ===============================================
 # パーツ
@@ -24,4 +25,6 @@
 @import "parts/contact";      // footerの上
 @import "parts/footer";
 @import "parts/btn";          // ボタン
+@import "parts/title";        // ページタイトル
 @import "parts/sub_title";    // 中見出し
+@import "parts/pagination";        // ページネーション

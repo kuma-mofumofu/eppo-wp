@@ -36,7 +36,11 @@
 
     <section class="hide--news">
       <h2>NEWS</h2>
-      <a href="#">お知らせ</a>
+      <?php
+        $cat_column = get_term_by('slug','news','category');
+        $cat_column_link = get_term_link( $cat_column , ' category ' );
+      ?>
+      <a href="<?php echo esc_url( $cat_column_link ); ?>">お知らせ</a>
     </section>
 
     <section class="hide--member">
