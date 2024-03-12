@@ -20,11 +20,17 @@
 
   </div><!-- /.header--inner -->
 
+  <?php
+    $category_diary = get_term_by('slug','diary','category');
+    $category_diary_link = get_term_link( $category_diary ,'category');
+  ?>
+
   <div class="hide">
     <section class="hide--about">
       <h2>ABOUT</h2>
       <a href="#">えっぽについて</a>
-      <a href="#">活動報告</a>
+
+      <a href="<?php echo esc_url( $category_diary_link ); ?>">活動報告</a>
       <a href="#">たからばこ</a>
     </section>
 
@@ -37,10 +43,10 @@
     <section class="hide--news">
       <h2>NEWS</h2>
       <?php
-        $cat_column = get_term_by('slug','news','category');
-        $cat_column_link = get_term_link( $cat_column , ' category ' );
+        $category_news = get_term_by('slug','news','category');
+        $category_news_link = get_term_link( $category_news ,'category');
       ?>
-      <a href="<?php echo esc_url( $cat_column_link ); ?>">お知らせ</a>
+      <a href="<?php echo esc_url( $category_news_link ); ?>">お知らせ</a>
     </section>
 
     <section class="hide--member">

@@ -21,7 +21,13 @@
               <li><a href="#">活動報告</a></li>
               <li><a href="#">支援について</a></li>
               <li><a href="#">たからばこ</a></li>
-              <li><a href="#">お知らせ</a></li>
+
+              <?php
+                $cat_column = get_term_by('slug','news','category');
+                $cat_column_link = get_term_link( $cat_column , ' category ' );
+              ?>
+              <li><a href="<?php echo esc_url( $cat_column_link ); ?>">お知らせ</a></li>
+              
             </ul>
           </div>
 

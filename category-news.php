@@ -67,9 +67,6 @@
       wp_reset_postdata();
       ?>
 
-
-
-
     </ul>
   </div><!-- /#news--inner -->
 

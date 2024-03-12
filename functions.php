@@ -63,22 +63,9 @@
   add_filter( 'custom_menu_order', 'wpse_custom_menu_order', 10, 1 );
   add_filter( 'menu_order', 'wpse_custom_menu_order', 10, 1 );
 
-  /* ===============================================
-  # 自作ページネーション
-  =============================================== */
-  // function the_pagination(){
-  //   $args = array(
-  //     'mid_size' => 1,
-  //     'prev_text' => '&lt;&lt;前へ',
-  //     'next_text' => '次へ&gt;&gt;',
-  //     'screen_reader_text' => '',
-  //   );
-  //   the_posts_pagination($args);
-  // }
-
-  /* ===============================================
-  # お知らせ一覧表示数
-  =============================================== */
+  /* =====================================================================
+  # お知らせ一覧表示数（これで指定するとページャーが表示されなかった）
+  ======================================================================= */
   function get_news_posts(){
     $args = array(
       'post_type' => 'post',
@@ -106,10 +93,10 @@
     $paged = $paged ?: 1;       //get_query_var('paged')をそのまま投げても大丈夫なように
 
     //表示テキスト
-    $text_first   = "« 最初へ";
-    $text_before  = "< 前へ";
-    $text_next    = "次へ >";
-    $text_last    = "最後へ »";
+    $text_first   = "最初へ";
+    $text_before  = "前へ";
+    $text_next    = "次へ";
+    $text_last    = "最後へ";
 
     if ( $show_only && $pages === 1 ) {
       // １ページのみで表示設定が true の時

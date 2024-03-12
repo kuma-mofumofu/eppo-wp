@@ -3,40 +3,28 @@
 /* ===============================================
 # ページャー
 =============================================== */
-.wp-pagenavi {
-  max-width: 1522px;
+.pagination{
   text-align: center;
-  background-color:$bg-color;
-  margin: 0 auto;
+  margin-top: 50px;
 
-  a,span {
-    color: $green;
-    background-color: $white;
-    padding: 8px 15px;
-    margin: 0 2px;
-    white-space: nowrap;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    border-radius: 3px;
-    -webkit-transition: 0.2s ease-in-out;
-    -moz-transition: 0.2s ease-in-out;
-    -o-transition: 0.2s ease-in-out;
-    transition: 0.2s ease-in-out;
-    text-align: center;
-    text-decoration: none;
+  .current{// 現在いるページ
+    background-color: $green;
+    color: $white;
   }
+}
 
-  .current{
-    color: $green;
-    background-color: $white;
-    font-weight: bold;
-    border: solid 1px #000;
-  }
+.pager,
+.next,
+.prev{
+  margin-right: 20px;
+  border: solid 1px $green;
+  padding: 20px;
+  border-radius: 10px;
+  background-color:$white;
+  color: $green;
 
-  a{
-    &:hover{
-      color: $white;
-      background-color: $green;
-    }
+  &:hover{
+    background-color:$green;
+    color: $white;
   }
 }

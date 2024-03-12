@@ -84,7 +84,7 @@ body {
 }
 
 main {
-  background: #ffffff;
+  background-color: #ffffe5;
   overflow: hidden;
 }
 
@@ -171,10 +171,6 @@ img {
 /* ===============================================
 # お知らせ一覧
 =============================================== */
-#news {
-  background-color: #ffffe5;
-  padding-bottom: 50px;
-}
 #news .news--inner {
   max-width: 1522px;
   margin: 0 auto 100px auto;
@@ -559,7 +555,7 @@ img {
 .contact--outer {
   width: 100%;
   background-color: #ffffe5;
-  padding: 300px 0 100px 0;
+  padding: 100px 0;
   margin-bottom: -176px;
 }
 .contact--outer .contact {
@@ -883,30 +879,28 @@ img {
 /* ===============================================
 # ページャー
 =============================================== */
-.wp-pagenavi {
-  max-width: 1522px;
+.pagination {
   text-align: center;
-  background-color: #ffffe5;
-  margin: 0 auto;
+  margin-top: 50px;
 }
-.wp-pagenavi a, .wp-pagenavi span {
-  color: #7fd352;
-  background-color: #ffffff;
-  padding: 8px 15px;
-  margin: 0 2px;
-  white-space: nowrap;
-  border-radius: 3px;
-  transition: 0.2s ease-in-out;
-  text-align: center;
-  text-decoration: none;
-}
-.wp-pagenavi .current {
-  color: #7fd352;
-  background-color: #ffffff;
-  font-weight: bold;
-  border: solid 1px #000;
-}
-.wp-pagenavi a:hover {
-  color: #ffffff;
+.pagination .current {
   background-color: #7fd352;
+  color: #ffffff;
+}
+
+.pager,
+.next,
+.prev {
+  margin-right: 20px;
+  border: solid 1px #7fd352;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  color: #7fd352;
+}
+.pager:hover,
+.next:hover,
+.prev:hover {
+  background-color: #7fd352;
+  color: #ffffff;
 }/*# sourceMappingURL=style.css.map */
