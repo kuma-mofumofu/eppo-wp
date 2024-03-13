@@ -5,5 +5,27 @@
 # 活動日記一覧
 =============================================== */
 #diary{
-  
+  .diary--inner{
+
+    .list--item{
+      a{
+        display: flex;
+        align-items: center;
+        padding: 30px 0;
+        border-bottom: solid 2px $green;
+        color: $green;
+
+        .year,
+        .time,
+        .text{
+          font-size:rem(26);
+        }
+
+        .year,
+        .time{
+          padding-right: 1rem;
+        }
+      }
+    }
+  }
 }

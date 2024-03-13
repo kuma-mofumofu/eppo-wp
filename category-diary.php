@@ -21,8 +21,6 @@
           )
         );
 
-        var_dump($diary_query);
-
         if($diary_query->have_posts()):
           while($diary_query->have_posts($post)):
             $diary_query->the_post();
@@ -31,24 +29,26 @@
 
       <li class="list--item">
         <a href="<?php the_permalink(); ?>">
-          <time class="time"><?php echo get_the_date('Y.m.d') ?></time>
+          <time class="year"><?php echo get_the_date('Y年'); ?></time>
+          <time class="time"><?php echo get_the_date('m月d日'); ?></time>
           <p class="text"><?php the_title();?></p>
-
         </a>
       </li><!-- /.list--item -->
 
       <?php
           endwhile;
         endif;
-
-        if(function_exists('pagination')):
-          pagination($diary_query->max_num_pages,$paged);
-        endif;
-
-        wp_reset_postdata();
       ?>
     </ul>
   </div><!-- /.diary--inner .inner -->
+
+  <?php
+    if(function_exists('pagination')):
+      pagination($diary_query->max_num_pages,$paged);
+    endif;
+
+    wp_reset_postdata();
+  ?>
 
 </main><!-- /#diary -->
 <?php  get_template_part('parts/contact'); ?>

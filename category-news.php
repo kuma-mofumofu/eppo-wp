@@ -59,17 +59,18 @@
       <?php
           endwhile;
         endif;
-
-        if ( function_exists( 'pagination' ) ) :
-          pagination( $news_query->max_num_pages, $paged );
-        endif;
-
-      wp_reset_postdata();
       ?>
 
     </ul>
   </div><!-- /.news--inner .inner -->
 
+  <?php
+    if ( function_exists( 'pagination' ) ) :
+      pagination( $news_query->max_num_pages, $paged );
+    endif;
+
+  wp_reset_postdata();
+  ?>
 
 </main><!-- /#news -->
 

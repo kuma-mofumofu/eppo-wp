@@ -93,10 +93,10 @@
     $paged = $paged ?: 1;       //get_query_var('paged')をそのまま投げても大丈夫なように
 
     //表示テキスト
-    $text_first   = "最初へ";
-    $text_before  = "前へ";
-    $text_next    = "次へ";
-    $text_last    = "最後へ";
+    $text_first   = "|<<";
+    $text_before  = "<<";
+    $text_next    = ">>";
+    $text_last    = ">>|";
 
     if ( $show_only && $pages === 1 ) {
       // １ページのみで表示設定が true の時
