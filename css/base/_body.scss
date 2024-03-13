@@ -34,6 +34,14 @@ main{
   overflow: hidden;
 }
 
+.inner{
+  max-width: 1522px;
+  background-color:$white;
+  margin: 0 auto 100px auto;
+  padding: 166px 131px;
+  border-radius: 20px;
+}
+
 ul{
   list-style: none;
 }

@@ -7,7 +7,7 @@
     <h2>お知らせ一覧</h2>
   </div>
 
-  <div class="news--inner">
+  <div class="news--inner inner">
     <ul class="list">
 
       <?php
@@ -62,13 +62,13 @@
 
         if ( function_exists( 'pagination' ) ) :
           pagination( $news_query->max_num_pages, $paged );
-      endif;
+        endif;
 
       wp_reset_postdata();
       ?>
 
     </ul>
-  </div><!-- /#news--inner -->
+  </div><!-- /.news--inner .inner -->
 
 
 </main><!-- /#news -->

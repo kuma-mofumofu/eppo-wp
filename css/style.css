@@ -88,6 +88,14 @@ main {
   overflow: hidden;
 }
 
+.inner {
+  max-width: 1522px;
+  background-color: #ffffff;
+  margin: 0 auto 100px auto;
+  padding: 166px 131px;
+  border-radius: 20px;
+}
+
 ul {
   list-style: none;
 }
@@ -171,13 +179,6 @@ img {
 /* ===============================================
 # お知らせ一覧
 =============================================== */
-#news .news--inner {
-  max-width: 1522px;
-  margin: 0 auto 100px auto;
-  padding: 166px 131px;
-  background-color: #ffffff;
-  border-radius: 20px;
-}
 #news .news--inner .list--item {
   padding: 2rem 0;
   border-bottom: solid 2px rgba(203, 203, 203, 0.3215686275);

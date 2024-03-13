@@ -23,6 +23,9 @@
   <?php
     $category_diary = get_term_by('slug','diary','category');
     $category_diary_link = get_term_link( $category_diary ,'category');
+
+    $category_news = get_term_by('slug','news','category');
+    $category_news_link = get_term_link( $category_news ,'category');
   ?>
 
   <div class="hide">
@@ -42,10 +45,6 @@
 
     <section class="hide--news">
       <h2>NEWS</h2>
-      <?php
-        $category_news = get_term_by('slug','news','category');
-        $category_news_link = get_term_link( $category_news ,'category');
-      ?>
       <a href="<?php echo esc_url( $category_news_link ); ?>">お知らせ</a>
     </section>
 
