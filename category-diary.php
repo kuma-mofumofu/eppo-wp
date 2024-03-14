@@ -32,6 +32,12 @@
           <time class="year"><?php echo get_the_date('Y年'); ?></time>
           <time class="time"><?php echo get_the_date('m月d日'); ?></time>
           <p class="text"><?php the_title();?></p>
+
+          <div class="arrow">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </a>
       </li><!-- /.list--item -->
 
