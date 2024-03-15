@@ -11,7 +11,8 @@
       a{
         display: flex;
         align-items: center;
-        padding: 30px 0;
+        justify-content: space-between;
+        padding: 30px;
         border-bottom: solid 2px $green;
         color: $green;
 
@@ -24,6 +25,10 @@
         .year,
         .time{
           padding-right: 1rem;
+        }
+
+        .text{
+          flex-grow: 1;
         }
       }
     }
