@@ -26,6 +26,9 @@
 
     $category_news = get_term_by('slug','news','category');
     $category_news_link = get_term_link( $category_news ,'category');
+
+    $category_treasure = get_term_by('slug','treasure','category');
+    $category_treasure_link = get_term_link( $category_treasure ,'category');
   ?>
 
   <div class="hide">
@@ -34,7 +37,8 @@
       <a href="#">えっぽについて</a>
 
       <a href="<?php echo esc_url( $category_diary_link ); ?>">活動報告</a>
-      <a href="#">たからばこ</a>
+
+      <a href="<?php echo esc_url( $category_treasure_link ); ?>">たからばこ</a>
     </section>
 
     <section class="hide--contact">

@@ -15,6 +15,13 @@
           </div><!-- /.footer_logo -->
 
           <div class="footer_nav">
+            <?php
+              $category_news = get_term_by('slug','news','category');
+              $category_news_link = get_term_link( $category_news ,'category');
+
+              
+            ?>
+
             <ul>
               <li><a href="#">えっぽについて</a></li>
               <li><a href="#">お問い合わせ</a></li>
@@ -22,11 +29,7 @@
               <li><a href="#">支援について</a></li>
               <li><a href="#">たからばこ</a></li>
 
-              <?php
-                $cat_column = get_term_by('slug','news','category');
-                $cat_column_link = get_term_link( $cat_column , ' category ' );
-              ?>
-              <li><a href="<?php echo esc_url( $cat_column_link ); ?>">お知らせ</a></li>
+              <li><a href="<?php echo esc_url( $category_news_link ); ?>">お知らせ</a></li>
               
             </ul>
           </div>

@@ -272,6 +272,61 @@ img {
 }
 
 /* ===============================================
+# 関数（function = 関数）
+=============================================== */
+/* ===============================================
+# 関数（function = 関数）
+=============================================== */
+/* ===============================================
+# 変数（variables = 変数）
+=============================================== */
+/* ===============================================
+# 関数（function = 関数）
+=============================================== */
+/* ===============================================
+# 関数（function = 関数）
+=============================================== */
+/* ===============================================
+# 変数（variables = 変数）
+=============================================== */
+/* ===============================================
+# mixin（プロパティや値をセットにしてまとめる）
+=============================================== */
+/* ===============================================
+# たからばこ一覧
+=============================================== */
+#treasure .list--item {
+  border-bottom: solid 2px #7fd352;
+  padding: 1.5rem 0;
+}
+#treasure .list--item:first-child .text_tag {
+  color: #7fd352;
+}
+#treasure .list--item a {
+  display: flex;
+  align-items: center;
+}
+#treasure .list--item .text-title, #treasure .list--item .text-time {
+  font-size: 1.5625rem;
+}
+#treasure .list--item .text-time {
+  margin-right: 5rem;
+}
+#treasure .list--item .text-title {
+  width: 20%;
+}
+#treasure .list--item .text_tag {
+  display: flex;
+  flex: 1;
+}
+#treasure .list--item .text_tag .space {
+  padding-left: 1rem;
+}
+#treasure .list--item .text {
+  color: #7fd352;
+}
+
+/* ===============================================
 # パーツ
 =============================================== */
 /* ===============================================
@@ -598,28 +653,28 @@ img {
   transform: rotate(-45deg);
 }
 
-#diary .arrow {
+#diary .arrow, #treasure .arrow {
   width: 30px;
   height: 30px;
   position: relative;
 }
-#diary .arrow span {
+#diary .arrow span, #treasure .arrow span {
   position: absolute;
   display: block;
   height: 2px;
   background-color: #7fd352;
 }
-#diary .arrow span:nth-of-type(1) {
+#diary .arrow span:nth-of-type(1), #treasure .arrow span:nth-of-type(1) {
   width: 15px;
   top: 88%;
   left: 55%;
   transform: translateY(-6px) rotate(-45deg);
 }
-#diary .arrow span:nth-of-type(2) {
+#diary .arrow span:nth-of-type(2), #treasure .arrow span:nth-of-type(2) {
   width: 30px;
   top: 50%;
 }
-#diary .arrow span:nth-of-type(3) {
+#diary .arrow span:nth-of-type(3), #treasure .arrow span:nth-of-type(3) {
   width: 15px;
   top: 49%;
   left: 55%;
