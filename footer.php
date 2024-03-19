@@ -15,6 +15,10 @@
           </div><!-- /.footer_logo -->
 
           <div class="footer_nav">
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
             <?php
               $category_news = get_term_by('slug','news','category');
               $category_news_link = get_term_link( $category_news ,'category');

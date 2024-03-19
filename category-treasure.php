@@ -11,7 +11,11 @@
     </div><!-- /.search_box -->
 
     <div class="tags">
+<<<<<<< Updated upstream
       <!-- <?php
+=======
+      <?php
+>>>>>>> Stashed changes
         $tag_cloud_args = array(
           'smallest'=> 1,    // 最小文字サイズ
           'largest'=>1,      // 最大文字サイズ
@@ -21,7 +25,11 @@
           'format'=>'list'   // 出力形式
         );
         wp_tag_cloud($tag_cloud_args);
+<<<<<<< Updated upstream
       ?> -->
+=======
+      ?>
+>>>>>>> Stashed changes
     </div><!--/.tags -->
 
     <ul class="list">
