@@ -7,22 +7,22 @@
 
   <div class="treasure--inner inner">
 
+  <?php echo do_shortcode( '[searchandfilter fields="search,category,post_tag"]' ); ?>
+
     <div class="search_box">
     </div><!-- /.search_box -->
 
-    <div class="tags">
-      <?php
-        $tag_cloud_args = array(
-          'smallest'=> 1,    // 最小文字サイズ
-          'largest'=>1,      // 最大文字サイズ
-          'unit'=>'rem',     // 文字サイズの単位
-          'number'=>0,       // 表示するタグの数（0なら全部表示）
-          'orderby'=>'count',// 記事件数で並び替える
-          'format'=>'list'   // 出力形式
-        );
-        wp_tag_cloud($tag_cloud_args);
-      ?>
-    </div><!--/.tags -->
+    <div class="tags--outer">
+      <div class="tags">
+        <h3>#検索キーワード</h3>
+        <?php $tags = get_tags();?>
+        <ul>
+          <?php foreach($tags as $tag){ ?>
+            <li>#<?php echo $tag->name; ?></li>
+          <?php } ?>
+        </ul>
+      </div><!--/.tags -->
+    </div><!--/.tags--outer -->
 
     <ul class="list">
       <?php

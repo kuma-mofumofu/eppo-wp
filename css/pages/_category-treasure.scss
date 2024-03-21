@@ -5,6 +5,47 @@
 # たからばこ一覧
 =============================================== */
 #treasure{
+  .treasure--inner{
+    padding-top: 44px;
+  }
+
+  // 検索ボックス
+  .search_box{
+    height: 55px;
+    border-radius: 30px;
+    border:solid 2px $green;
+    margin-bottom: 1rem;
+  }
+
+  // 検索キーワード
+  .tags--outer{
+    border-bottom:dotted 1px $black;
+  }
+
+  .tags{
+    background-color:$green-3;
+    border-radius: 15px;
+    padding: 50px 30px;
+    margin-bottom: 2rem;
+
+    h3{
+      color:$white;
+      font-size:rem(26);
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    ul{
+      display: flex;
+      flex-wrap: wrap;
+
+      li{
+        color: $white;
+        margin-right: 3rem;
+        margin-bottom: 1rem;
+      }
+    }
+  }
 
   // ループ
   .list--item{

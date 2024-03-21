@@ -295,6 +295,39 @@ img {
 /* ===============================================
 # たからばこ一覧
 =============================================== */
+#treasure .treasure--inner {
+  padding-top: 44px;
+}
+#treasure .search_box {
+  height: 55px;
+  border-radius: 30px;
+  border: solid 2px #7fd352;
+  margin-bottom: 1rem;
+}
+#treasure .tags--outer {
+  border-bottom: dotted 1px #3b4043;
+}
+#treasure .tags {
+  background-color: #8fce5a;
+  border-radius: 15px;
+  padding: 50px 30px;
+  margin-bottom: 2rem;
+}
+#treasure .tags h3 {
+  color: #ffffff;
+  font-size: 1.625rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+#treasure .tags ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+#treasure .tags ul li {
+  color: #ffffff;
+  margin-right: 3rem;
+  margin-bottom: 1rem;
+}
 #treasure .list--item {
   border-bottom: solid 2px #7fd352;
   padding: 1.5rem 0;
