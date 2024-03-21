@@ -10,6 +10,14 @@
   }
 
   // 検索ボックス
+  .searcBox{
+    margin-bottom: 50px;
+    input{
+      &:first-of-type{
+        border: 1px solid #000;
+      }
+    }
+  }
   .search_box{
     height: 55px;
     border-radius: 30px;

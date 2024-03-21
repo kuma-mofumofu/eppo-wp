@@ -298,6 +298,12 @@ img {
 #treasure .treasure--inner {
   padding-top: 44px;
 }
+#treasure .searcBox {
+  margin-bottom: 50px;
+}
+#treasure .searcBox input:first-of-type {
+  border: 1px solid #000;
+}
 #treasure .search_box {
   height: 55px;
   border-radius: 30px;
@@ -356,6 +362,64 @@ img {
   padding-left: 1rem;
 }
 #treasure .list--item .text {
+  color: #7fd352;
+}
+
+/* ===============================================
+# 関数（function = 関数）
+=============================================== */
+/* ===============================================
+# 関数（function = 関数）
+=============================================== */
+/* ===============================================
+# 変数（variables = 変数）
+=============================================== */
+/* ===============================================
+# 関数（function = 関数）
+=============================================== */
+/* ===============================================
+# 関数（function = 関数）
+=============================================== */
+/* ===============================================
+# 変数（variables = 変数）
+=============================================== */
+/* ===============================================
+# mixin（プロパティや値をセットにしてまとめる）
+=============================================== */
+/* ===============================================
+# サーチ結果
+=============================================== */
+#search .search--inner {
+  padding-top: 44px;
+}
+#search .list--item {
+  border-bottom: solid 2px #7fd352;
+  padding: 1.5rem 0;
+}
+#search .list--item:first-child .text_tag {
+  color: #7fd352;
+}
+#search .list--item a {
+  display: flex;
+  align-items: center;
+}
+#search .list--item .text-title, #search .list--item .text-time {
+  font-size: 1.5625rem;
+}
+#search .list--item .text-time {
+  margin-right: 5rem;
+}
+#search .list--item .text-title {
+  width: 20%;
+}
+#search .list--item .text_tag {
+  display: flex;
+  flex: 1;
+}
+#search .list--item .text_tag .space {
+  padding-left: 1rem;
+}
+#search .list--item .text {
   color: #7fd352;
 }
 

@@ -7,7 +7,9 @@
 
   <div class="treasure--inner inner">
 
-  <?php echo do_shortcode( '[searchandfilter fields="search,category,post_tag"]' ); ?>
+    <div class ="searcBox">
+      <?php echo do_shortcode( '[searchandfilter fields="search" submit_label="検索"]' ); ?>
+    </div>
 
     <div class="search_box">
     </div><!-- /.search_box -->
