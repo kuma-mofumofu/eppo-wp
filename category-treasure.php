@@ -7,20 +7,17 @@
 
   <div class="treasure--inner inner">
 
-    <div class ="searcBox">
-      <?php echo do_shortcode( '[searchandfilter fields="search" submit_label="検索"]' ); ?>
-    </div>
-
-    <div class="search_box">
-    </div><!-- /.search_box -->
-
     <div class="tags--outer">
       <div class="tags">
-        <h3>#検索キーワード</h3>
+        <h3>#ハッシュタグ</h3>
         <?php $tags = get_tags();?>
         <ul>
-          <?php foreach($tags as $tag){ ?>
-            <li>#<?php echo $tag->name; ?></li>
+          <?php foreach($tags as $tag) { ?>
+            <li>
+              <a href="<?php echo $tag_link = get_tag_link($tag->term_id); ?>">
+                #<?php echo $tag->name; ?>
+              </a>
+            </li>
           <?php } ?>
         </ul>
       </div><!--/.tags -->
@@ -46,22 +43,23 @@
       ?>
 
       <li class="list--item">
-        <a href="<?php the_permalink(); ?>">
+        <a class="list--item--link" href="<?php the_permalink(); ?>">
           <time class="text text-time"><?php echo get_the_date('Y年m月d日'); ?></time>
           <p class="text text-title"><?php the_title(); ?></p>
-          <p class="text text_tag">
-            <?php
-              $html ='#';
-              $separator = '<span class="space"> # </span>';
-              $tags = get_the_tags();
-              foreach($tags as $tag){
-                $html .= '<span>' .$tag->name .'</span>' .$separator;
-              }
-              $html = rtrim($html,$separator);
-              echo $html;
-            ?>
-          </p>
-
+        </a>
+        <p class="text text_tag">
+          <?php
+            $html ='#';
+            $separator = '<span class="space"> # </span>';
+            $tags = get_the_tags();
+            foreach($tags as $tag){
+              $html .= '<span>' .$tag->name .'</span>' .$separator;
+            }
+            $html = rtrim($html,$separator);
+            echo $html;
+          ?>
+        </p>
+        <a href="<?php the_permalink(); ?>">
           <div class="arrow">
             <span></span>
             <span></span>

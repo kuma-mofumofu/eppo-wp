@@ -9,23 +9,7 @@
     padding-top: 44px;
   }
 
-  // 検索ボックス
-  .searcBox{
-    margin-bottom: 50px;
-    input{
-      &:first-of-type{
-        border: 1px solid #000;
-      }
-    }
-  }
-  .search_box{
-    height: 55px;
-    border-radius: 30px;
-    border:solid 2px $green;
-    margin-bottom: 1rem;
-  }
-
-  // 検索キーワード
+  // ハッシュタグ
   .tags--outer{
     border-bottom:dotted 1px $black;
   }
@@ -48,9 +32,12 @@
       flex-wrap: wrap;
 
       li{
-        color: $white;
         margin-right: 3rem;
         margin-bottom: 1rem;
+
+        a{
+          color: $white;
+        }
       }
     }
   }
@@ -59,16 +46,21 @@
   .list--item{
     border-bottom: solid 2px $green;
     padding: 1.5rem 0;
+    display: flex;
+    align-items: center;
 
     &:first-child{
-
       .text_tag{
         color: $green;
       }
     }
 
-    a{
+    .list--item--link{
+      width: 40%;
       display: flex;
+    }
+
+    a{
       align-items: center;
     }
 
@@ -82,6 +74,7 @@
 
     .text-title{
       width: 20%;
+      flex:1;
     }
 
     .text_tag{
