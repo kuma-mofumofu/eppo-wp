@@ -11,7 +11,7 @@
       <section>
         <ul class="search">
           <?php
-            if(have_posts() && get_search_query()):
+            if(have_posts()):
               while(have_posts()):
                 the_post();
           ?>

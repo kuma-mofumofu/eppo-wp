@@ -10,11 +10,14 @@
     <div class="tags--outer">
       <div class="tags">
         <h3>#ハッシュタグ</h3>
-        <?php $tags = get_tags();?>
+        <?php $tags = get_tags('treasure');?>
         <ul>
-          <?php foreach($tags as $tag) { ?>
+          <?php
+            foreach($tags as $tag) {
+              $tag_link = esc_url(get_tag_link($tag->term_id));
+          ?>
             <li>
-              <a href="<?php echo $tag_link = get_tag_link($tag->term_id); ?>">
+              <a href="<?php echo $tag_link; ?>">
                 #<?php echo $tag->name; ?>
               </a>
             </li>
