@@ -53,7 +53,7 @@
     </section>
 
     <section class="hide--member">
-      <a class="hide--member--inner" href="#">
+      <a class="hide--member--inner" href="<?php echo esc_url( '/recruitment' ); ?>">
         <h2>MEMBER</h2>
         <p>メンバー＆サポーター募集</p>
         <p>支援のお願い</p>

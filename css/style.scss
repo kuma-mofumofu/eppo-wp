@@ -6,8 +6,13 @@
 @import "global/mixin";       // mixin
 @import "global/animation";   // アニメーション
 @import "global/font";        // フォント
+
+/* ===============================================
+# ベース
+=============================================== */
 @import "base/body";          // 全体のベース
 @import "base/container";
+@import "base/inner";
 
 /* ===============================================
 # ページ
