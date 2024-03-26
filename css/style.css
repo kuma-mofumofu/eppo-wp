@@ -354,6 +354,9 @@ img {
   display: flex;
   flex: 1;
 }
+#treasure .list--item .text_tag a span {
+  color: #7fd352;
+}
 #treasure .list--item .text_tag .space {
   padding-left: 1rem;
 }
@@ -453,6 +456,10 @@ img {
 #tag .list--item:first-child .text_tag {
   color: #7fd352;
 }
+#tag .list--item .list--item--link {
+  width: 40%;
+  display: flex;
+}
 #tag .list--item a {
   display: flex;
   align-items: center;
@@ -469,6 +476,9 @@ img {
 #tag .list--item .text_tag {
   display: flex;
   flex: 1;
+}
+#tag .list--item .text_tag a {
+  color: #7fd352;
 }
 #tag .list--item .text_tag .space {
   padding-left: 1rem;

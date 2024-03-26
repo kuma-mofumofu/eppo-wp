@@ -41,7 +41,8 @@
 
                   if($post_tags){
                     foreach($post_tags as $tag){
-                      $html .= '<span>' .$tag->name .'</span>' .$separator;
+                      $tag_link = esc_url(get_tag_link($tag->term_id));
+                      $html .= '<a href="'.$tag_link.'"><span>' .$tag->name .'</span></a>' .$separator;
                     }
                     $html = rtrim($html,$separator);
                     echo $html;

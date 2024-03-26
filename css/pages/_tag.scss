@@ -21,6 +21,11 @@
       }
     }
 
+    .list--item--link{
+      width: 40%;
+      display: flex;
+    }
+
     a{
       display: flex;
       align-items: center;
@@ -41,6 +46,10 @@
     .text_tag{
       display: flex;
       flex: 1;
+
+      a{
+        color: $green;
+      }
 
       .space{
         padding-left: rem(16);
