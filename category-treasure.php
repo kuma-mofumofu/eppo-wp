@@ -10,19 +10,38 @@
     <div class="tags--outer">
       <div class="tags">
         <h3>#ハッシュタグ</h3>
-        <?php $tags = get_tags('treasure');?>
-        <ul>
-          <?php
+
+        <?php
+          // カテゴリーに関連する投稿を取得
+          $category_posts = get_posts(array(
+            'category_name' => 'treasure',
+            'posts_per_page' => -1 // 全ての投稿を取得
+          ));
+
+          // カテゴリーに関連する投稿に紐づくタグを取得
+          $tags = array();
+          foreach ($category_posts as $post) {
+            $post_tags = get_the_tags($post->ID);
+            if ($post_tags) {
+              foreach ($post_tags as $tag) {
+                $tags[$tag->term_id] = $tag;
+              }
+            }
+          }
+
+          // タグリンクを表示
+          if ($tags) {
+            echo '<ul>';
             foreach($tags as $tag) {
               $tag_link = esc_url(get_tag_link($tag->term_id));
-          ?>
-            <li>
-              <a href="<?php echo $tag_link; ?>">
-                #<?php echo $tag->name; ?>
-              </a>
-            </li>
-          <?php } ?>
-        </ul>
+              echo '<li><a href="' . $tag_link . '"> #' . $tag->name . '</a></li>';
+            }
+            echo '</ul>';
+          } else {
+            echo '<p>タグはありません</p>';
+          }
+        ?>
+
       </div><!--/.tags -->
     </div><!--/.tags--outer -->
 
@@ -54,14 +73,16 @@
           <?php
             $html ='#';
             $separator = '<span class="space"> # </span>';
-            $tags = get_the_tags();
-            foreach($tags as $tag){
+            $post_tags = get_the_tags();
+
+            foreach($post_tags as $tag){
               $html .= '<span>' .$tag->name .'</span>' .$separator;
             }
             $html = rtrim($html,$separator);
             echo $html;
           ?>
         </p>
+
         <a href="<?php the_permalink(); ?>">
           <div class="arrow">
             <span></span>

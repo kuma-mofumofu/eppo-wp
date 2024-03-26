@@ -9,7 +9,7 @@
 
 
       <section>
-        <ul class="search">
+        <ul class="loop">
           <?php
             if(have_posts() && get_search_query()):
               while(have_posts()):
