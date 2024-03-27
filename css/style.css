@@ -52,6 +52,9 @@
 =============================================== */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500&display=swap");
 /* ===============================================
+# ベース
+=============================================== */
+/* ===============================================
 # 関数（function = 関数）
 =============================================== */
 /* ===============================================
@@ -88,14 +91,6 @@ main {
   overflow: hidden;
 }
 
-.inner {
-  max-width: 1522px;
-  background-color: #ffffff;
-  margin: 0 auto 100px auto;
-  padding: 166px 131px;
-  border-radius: 20px;
-}
-
 ul {
   list-style: none;
 }
@@ -129,6 +124,20 @@ img {
 .container {
   width: 100%;
   padding: 0 20px;
+}
+
+/* ===============================================
+# 関数（function = 関数）
+=============================================== */
+/* ===============================================
+# 変数（variables = 変数）
+=============================================== */
+.inner {
+  max-width: 1522px;
+  background-color: #ffffff;
+  margin: 0 auto 100px auto;
+  padding: 166px 131px;
+  border-radius: 20px;
 }
 
 /* ===============================================
@@ -485,6 +494,82 @@ img {
 }
 #tag .list--item .text {
   color: #7fd352;
+}
+
+/* ===============================================
+# 関数（function = 関数）
+=============================================== */
+/* ===============================================
+# 関数（function = 関数）
+=============================================== */
+/* ===============================================
+# 変数（variables = 変数）
+=============================================== */
+/* ===============================================
+# 関数（function = 関数）
+=============================================== */
+/* ===============================================
+# 関数（function = 関数）
+=============================================== */
+/* ===============================================
+# 変数（variables = 変数）
+=============================================== */
+/* ===============================================
+# mixin（プロパティや値をセットにしてまとめる）
+=============================================== */
+/* ===============================================
+# メンバー募集ページ
+=============================================== */
+#recruitment #main {
+  padding-top: 200px;
+}
+#recruitment .member,
+#recruitment .requirements,
+#recruitment .supporter {
+  max-width: 1400px;
+  background-color: #ffffff;
+  padding: 80px 300px 136px 300px;
+  margin: 0 auto;
+}
+#recruitment .member h3,
+#recruitment .requirements h3,
+#recruitment .supporter h3 {
+  color: #f07e69;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 90px;
+}
+#recruitment .member p,
+#recruitment .requirements p,
+#recruitment .supporter p {
+  font-size: 1.5625rem;
+}
+#recruitment .member,
+#recruitment .requirements {
+  margin-bottom: 355px;
+}
+#recruitment .member,
+#recruitment .supporter {
+  border-radius: 30px;
+}
+#recruitment .member h3,
+#recruitment .supporter h3 {
+  font-size: 3.75rem;
+  line-height: 2rem;
+}
+#recruitment .member h3 span,
+#recruitment .supporter h3 span {
+  font-size: 1rem;
+  letter-spacing: 1rem;
+}
+#recruitment .requirements {
+  border-radius: 300px 0;
+}
+#recruitment .requirements h3 {
+  font-size: 2.8125rem;
+}
+#recruitment .supporter {
+  margin-bottom: 150px;
 }
 
 /* ===============================================
@@ -1084,10 +1169,13 @@ img {
   width: 376px;
   height: 187px;
   background-color: #ffffff;
-  display: flex;
-  align-items: center;
   box-shadow: 7px 7px 7px 0px rgba(145, 145, 145, 0.38);
   position: relative;
+}
+.contact .contact_btn > a {
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 .contact .contact_btn p {
   width: 75%;

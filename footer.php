@@ -16,18 +16,25 @@
 
           <div class="footer_nav">
             <?php
+              $category_diary = get_term_by('slug','diary','category');
+              $category_diary_link = get_term_link( $category_diary ,'category');
+
+              $category_treasure = get_term_by('slug','treasure','category');
+              $category_treasure_link = get_term_link( $category_treasure ,'category');
+
               $category_news = get_term_by('slug','news','category');
               $category_news_link = get_term_link( $category_news ,'category');
-
-              
             ?>
 
             <ul>
               <li><a href="#">えっぽについて</a></li>
               <li><a href="#">お問い合わせ</a></li>
-              <li><a href="#">活動報告</a></li>
+
+              <li><a href="<?php echo esc_url( $category_diary_link ); ?>">活動報告</a></li>
+
               <li><a href="#">支援について</a></li>
-              <li><a href="#">たからばこ</a></li>
+
+              <li><a href="<?php echo esc_url( $category_treasure_link ); ?>">たからばこ</a></li>
 
               <li><a href="<?php echo esc_url( $category_news_link ); ?>">お知らせ</a></li>
               
@@ -38,7 +45,7 @@
 
         <div class="footer--inner--right">
           <div class="footer_btn">
-              <a href="#">
+              <a href="<?php echo esc_url( '/recruitment' ); ?>">
                 <div class="btn btn-orange">
                   <p>サポートのお願い</p>
                 </div>

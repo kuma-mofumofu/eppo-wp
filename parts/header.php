@@ -24,11 +24,11 @@
     $category_diary = get_term_by('slug','diary','category');
     $category_diary_link = get_term_link( $category_diary ,'category');
 
-    $category_news = get_term_by('slug','news','category');
-    $category_news_link = get_term_link( $category_news ,'category');
-
     $category_treasure = get_term_by('slug','treasure','category');
     $category_treasure_link = get_term_link( $category_treasure ,'category');
+
+    $category_news = get_term_by('slug','news','category');
+    $category_news_link = get_term_link( $category_news ,'category');
   ?>
 
   <div class="hide">

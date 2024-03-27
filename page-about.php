@@ -1,8 +1,7 @@
 <?php get_header(); ?>
 <?php  get_template_part('parts/header'); ?>
-<main>
+  <main id="about">
 
-</main>
-<?php wp_pagenavi(); ?>
+  </main>
 <?php  get_template_part('parts/contact'); ?>
 <?php get_footer(); ?>

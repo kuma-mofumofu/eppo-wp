@@ -1,0 +1,65 @@
+@import "../global/function";
+@import "../global/variables";
+@import "../global/mixin";
+/* ===============================================
+# メンバー募集ページ
+=============================================== */
+#recruitment{
+
+  #main{
+    padding-top: 200px;
+  }
+
+  .member,
+  .requirements,
+  .supporter{
+    max-width: 1400px;
+    background-color: $white;
+    padding: 80px 300px 136px 300px;
+    margin: 0 auto;
+
+    h3{
+      color:$pink-2;
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 90px;
+    }
+
+    p{
+      font-size:rem(25);
+    }
+  }
+
+  .member,
+  .requirements{
+    margin-bottom: 355px;
+  }
+
+  .member,
+  .supporter{
+    border-radius:30px;
+
+    h3{
+      font-size:$fs-large;
+      line-height: 2rem;
+
+      span{
+        font-size:$fs-normal;
+        letter-spacing:1rem;
+      }
+    }
+  }
+
+  // 応募要件
+  .requirements{
+    border-radius: 300px 0;
+
+    h3{
+      font-size:rem(45);
+    }
+  }
+  // サポーター募集
+  .supporter{
+    margin-bottom: 150px;
+  }
+}

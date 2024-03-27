@@ -4,23 +4,27 @@
     <div class="contact--inner">
 
       <div class="contact_btn contact_btn-left">
-        <div class="border"></div>
-        <p>支援のお願い</p>
-        <div class="contact_arrow">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+        <a href="#">
+          <div class="border"></div>
+          <p>支援のお願い</p>
+          <div class="contact_arrow">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </a>
       </div>
 
       <div class="contact_btn contact_btn-right">
-        <div class="border"></div>
-        <p>メンバー<br>&<br>サポーター募集</p>
-        <div class="contact_arrow">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+        <a class="hide--member--inner" href="<?php echo esc_url( '/recruitment' ); ?>">
+          <div class="border"></div>
+          <p>メンバー<br>&<br>サポーター募集</p>
+          <div class="contact_arrow">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </a>
       </div>
 
     </div><!-- /.contact--inner--btn -->
