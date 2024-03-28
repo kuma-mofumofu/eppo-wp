@@ -27,7 +27,8 @@
             ?>
 
             <ul>
-              <li><a href="#">えっぽについて</a></li>
+              <li><a href="<?php echo esc_url( '/about' ); ?>">えっぽについて</a></li>
+              
               <li><a href="#">お問い合わせ</a></li>
 
               <li><a href="<?php echo esc_url( $category_diary_link ); ?>">活動報告</a></li>

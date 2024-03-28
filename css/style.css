@@ -573,6 +573,90 @@ img {
 }
 
 /* ===============================================
+# 関数（function = 関数）
+=============================================== */
+/* ===============================================
+# 関数（function = 関数）
+=============================================== */
+/* ===============================================
+# 変数（variables = 変数）
+=============================================== */
+/* ===============================================
+# 関数（function = 関数）
+=============================================== */
+/* ===============================================
+# 関数（function = 関数）
+=============================================== */
+/* ===============================================
+# 変数（variables = 変数）
+=============================================== */
+/* ===============================================
+# mixin（プロパティや値をセットにしてまとめる）
+=============================================== */
+/* ===============================================
+# えっぽについて
+=============================================== */
+#about .cherish {
+  max-width: 1580px;
+  margin: 0 auto 125px auto;
+}
+#about .cherish h3 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #7fd352;
+  margin-bottom: 70px;
+}
+#about .cherish .cherish--inner {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 150px;
+}
+#about .cherish .cherish--inner .block--outer {
+  width: 25%;
+  border-radius: 50%;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 20px 20px #ffffff;
+}
+#about .cherish .cherish--inner .block--outer .block {
+  height: 0;
+  position: relative;
+  padding-top: 100%;
+}
+#about .cherish .cherish--inner .block--outer .block p {
+  font-size: 2.8125rem;
+  font-weight: bold;
+  color: #7fd352;
+  position: absolute;
+  top: calc((100% - 1rem) / 2);
+  left: 0;
+  right: 0;
+  text-align: center;
+  transform: translateY(-50%);
+}
+@media screen and (max-width: 1800px) {
+  #about .cherish .cherish--inner .block--outer .block p {
+    font-size: 3vw;
+  }
+}
+#about .cherish .text {
+  max-width: 980px;
+  margin: 0 auto;
+}
+#about .cherish .text p {
+  font-size: 1.5625rem;
+}
+#about .greeting {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+#about .greeting .greeting--img {
+  text-align: center;
+}
+#about .greeting .greeting--img img {
+  max-width: 370px;
+}
+
+/* ===============================================
 # パーツ
 =============================================== */
 /* ===============================================
@@ -1218,6 +1302,11 @@ img {
   color: #7fd352;
   font-size: 3.75rem;
   font-weight: bold;
+  line-height: 2rem;
+}
+.title h2 span {
+  font-size: 1rem;
+  letter-spacing: 1rem;
 }
 
 /* ===============================================
@@ -1244,6 +1333,19 @@ img {
 /* ===============================================
 # 中見出し
 =============================================== */
+#about .sub_title {
+  font-size: 3.75rem;
+  font-weight: bold;
+  color: #7fd352;
+  text-align: center;
+  line-height: 0.6;
+  margin-bottom: 80px;
+}
+#about .sub_title span {
+  font-size: 1rem;
+  letter-spacing: 1rem;
+}
+
 .contact .sub_title {
   color: #f39abb;
 }

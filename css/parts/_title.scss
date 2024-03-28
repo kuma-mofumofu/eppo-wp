@@ -12,5 +12,11 @@
     color: $green;
     font-size:$fs-large;
     font-weight: bold;
+    line-height: 2rem;
+
+    span{
+      font-size:$fs-normal;
+      letter-spacing:1rem;
+    }
   }
 }

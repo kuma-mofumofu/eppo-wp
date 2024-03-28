@@ -4,6 +4,23 @@
 /* ===============================================
 # 中見出し
 =============================================== */
+// えっぽについて
+#about{
+  .sub_title{
+    font-size:$fs-large;
+    font-weight: bold;
+    color: $green;
+    text-align:center;
+    line-height: .6;
+    margin-bottom: 80px;
+
+    span{
+      font-size:$fs-normal;
+      letter-spacing:1rem;
+    }
+  }
+}
+
 // footerの上
 .contact{
   .sub_title{

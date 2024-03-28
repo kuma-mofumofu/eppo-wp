@@ -34,7 +34,7 @@
   <div class="hide">
     <section class="hide--about">
       <h2>ABOUT</h2>
-      <a href="#">えっぽについて</a>
+      <a href="<?php echo esc_url( '/about' ); ?>">えっぽについて</a>
 
       <a href="<?php echo esc_url( $category_diary_link ); ?>">活動報告</a>
 
