@@ -64,14 +64,25 @@
   // 代表あいさつ
   .greeting{
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 0 auto 50px auto;
 
     .greeting--img{
       text-align: center;
+      margin-bottom: 90px;
 
       img{
         max-width: 370px;
       }
+    }
+
+    h3{
+      font-size: rem(35);
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    p{
+      font-size: rem(25);
     }
   }
 
